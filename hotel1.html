@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<title>hotelbooking</title>
+<script type="text/javascript">
+
+function OnButton1()
+{
+    document.form1.action = "home1.html";
+      document.form1.submit();
+}
+
+function OnButton2()
+{
+    document.form1.action = "hotel1.html";
+    document.form1.submit();             // Submit the page
+ 
+}
+
+function OnButton3()
+{
+    document.form1.action = "cab1.html";
+    document.form1.submit();             // Submit the page
+	}
+
+function OnButton4()
+{document.form1.action = "hotel1.html";
+    document.form1.submit();             // Submit the page
+}
+
+
+
+
+var image1=new Image()
+image1.src="ht1.jpg"
+
+var image2=new Image()
+image2.src="ht4.jpg"
+
+var image3=new Image()
+image3.src="ht3.jpg"
+
+var image4=new Image()
+image4.src="ht2.jpg"
+
+var image5=new Image()
+image5.src="ht5.jpg"
+
+var image6=new Image()
+image6.src="ht6.jpg"
+
+var image7=new Image()
+image7.src="ht7.jpg"
+
+var image8=new Image()
+image8.src="ht8.jpg"
+
+</script>
+</head>
+<body>
+<form name="form1" action="home1.html" method="get">
+<hr size=20 width=200% color="firebrick" align="left" >
+
+<img src="logo1.jpg" width="200" height="130">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="h1.jpg" width="1000" height="130" >
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l1.jpg" height="30" width="45" onclick="OnButton1();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l2.jpg" height="29" width="50" onclick="OnButton2();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l3.jpg" height="23" width="68" onclick="OnButton3();">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l4.jpg" height="43" width="120" onclick="OnButton4();">
+</form>
+<form name="form12" action="login.php" method="post">
+
+<img src="ht1.jpg" name="slide" width="885" height="405" align="left">
+<br>
+<br>
+<font face="WildWest" size="5"><b>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Going to: &nbsp;&nbsp; 
+
+    <select name="destination" autofocus required style="width: 150px; height: 30px;" >      
+	<option value="agra">agra</option> 
+	<option value="ahmedabad">ahmedabad</option>
+	<option value="amritsar">amritsar</option> 
+	<option value="andaman">andaman</option>     
+	<option value="bengaluru">bengaluru</option>
+	<option value="chennai">chennai</option>
+	<option value="coimbatore">coimbatore</option> 
+	<option value="darjeeling">darjeeling</option>
+	<option value="dehradun">dehradun</option>
+	<option value="dharamshala">dharamshala</option>
+	<option value="gangtok">gangtok</option> 
+	<option value="goa">goa</option>
+	<option value="hyderabad">hyderabad</option>
+	<option value="jaipur">jaipur</option> 
+	<option value="jaisalmer">jaisalmer</option>
+	<option value="jodhpur">jodhpur</option>
+	<option value="kanyakumari">kanyakumari</option>
+	<option value="kochi">kochi</option>
+	<option value="kolkata">kolkata</option> 
+	<option value="leh">leh</option>
+	<option value="lucknow">lucknow</option>
+	<option value="mahabaleshwar">mahabaleshwar</option>
+	<option value="manali">manali</option>
+	<option value="mumbai">mumbai</option>
+	<option value="mussoorie">mussoorie</option>
+	<option value="mysore">mysore</option>
+	<option value="nainital">nainital</option>
+	<option value="new delhi">new delhi</option> 
+	<option value="ooty">ooty</option>
+	<option value="pondicherry">pondicherry</option>
+	<option value="pune">pune</option>
+	<option value="shimla">shimla</option>
+	<option value="srinagar">srinagar</option> 
+	<option value="thiruvananthapuram">thiruvananthapuram</option>
+	<option value="udaipur">udaipur</option>
+	<option value="varanasi">varanasi</option>
+	</select>
+
+<br><br><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" name="search"   value="Search Your Hotel" style="width: 220px; height:40px; font-size:14pt;"> 	
+	</b></font>
+
+
+
+<script type="text/javascript">
+
+var number=1;
+function myslide()
+{document.images.slide.src=eval("image"+number+".src");
+if(number<8)
+number=number+1;
+
+else
+number=1;
+setTimeout("myslide()",2000);
+
+
+}
+myslide();
+</script>
+</body>
+</html>

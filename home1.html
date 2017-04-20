@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title>CONCEIRGE</title>
+<script type="text/javascript">
+
+function OnButton1()
+{
+    document.form1.action = "home1.html";
+      document.form1.submit();
+}
+
+function OnButton2()
+{
+    document.form1.action = "hotel1.html";
+    document.form1.submit();             // Submit the page
+ 
+}
+
+function OnButton3()
+{
+    document.form1.action = "cab1.html";
+    document.form1.submit();             // Submit the page
+	}
+
+function OnButton4()
+{document.form1.action = "hotel1.html";
+    document.form1.submit();             // Submit the page
+}
+
+
+
+
+var image1=new Image()
+image1.src="h4.jpg"
+
+var image2=new Image()
+image2.src="h7.jpg"
+
+var image3=new Image()
+image3.src="home6.jpg"
+
+var image4=new Image()
+image4.src="home3.jpg"
+
+var image5=new Image()
+image5.src="h6.jpg"
+
+var image6=new Image()
+image6.src="h2.jpg"
+
+var image7=new Image()
+image7.src="home7.jpg"
+
+var image8=new Image()
+image8.src="home8.jpg"
+
+var image9=new Image()
+image9.src="h8.jpg"
+</script>
+</head>
+<body>
+<form name="form1" action="home1.html" method="post">
+<hr size=20 width=200% color="indigo" align="left" >
+
+<img src="logo1.jpg" width="200" height="130">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="h1.jpg" width="1000" height="130" >
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l1.jpg" height="30" width="45" onclick="OnButton1();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l2.jpg" height="29" width="50" onclick="OnButton2();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l3.jpg" height="23" width="68" onclick="OnButton3();">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src="l4.jpg" height="43" width="120" onclick="OnButton4();">
+</br>
+<center>
+<img src="h4.jpg" name="slide" width="1300" height="405">
+</center>
+<script type="text/javascript">
+
+var number=1;
+function myslide()
+{document.images.slide.src=eval("image"+number+".src");
+if(number<9)
+number=number+1;
+
+else
+number=1;
+setTimeout("myslide()",2000);
+
+
+}
+myslide();
+</script>
+</body>
+</html>

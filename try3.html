@@ -1,0 +1,296 @@
+ <!doctype html>
+<html>
+<head>
+<title>CABS</title>
+<style> 
+.buttonsel {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.buttonsel:hover {
+    background-color: #999999;
+    color: white;
+}
+.buttonsel:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 0.6;
+    transition: 0s
+}
+.buttonsel:after {
+    content: "";
+    background: #0d0d0d;
+    display: block;
+    position: absolute;
+    padding-top: 24%;
+    padding-left: 111%;
+    margin-left: -15px!important;
+    margin-top: -16.5%;
+    opacity: 0;
+    transition: all 0.4s
+}
+
+.buttonsel {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  opacity:0.75;
+  border: none;
+  position:relative;
+  color: #0d0d0d;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  width: 15.38%;  
+  left:19%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.buttonsel span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonsel span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+}
+
+.buttonsel:hover span {
+  padding-right: 25px;
+}
+
+.buttonsel:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #999999;
+    color: white;
+}
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 0.6;
+    transition: 0s
+}
+.button:after {
+    content: "";
+    background: #0d0d0d;
+    display: block;
+    position: absolute;
+    padding-top: 24%;
+    padding-left: 111%;
+    margin-left: -15px!important;
+    margin-top: -16.5%;
+    opacity: 0;
+    transition: all 0.4s
+}
+
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #0d0d0d;
+  opacity:0.75;
+  border: none;
+  position:relative;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  width: 15.38%;  
+  left:19%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+div.transbox
+{
+  position:absolute;
+  left:16.5%;
+  width:60%;
+  height:45%;
+  margin: 63px;
+  background-color:rgba(13,13,13,0.5);
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+div.transbox p
+{
+  position:fixed;
+  margin: 50%;
+  font-weight: bold;
+  color: #000000;
+}
+body {
+
+    background: url("20.jpg");
+    background-size:1366px 768px;
+    background-repeat: no-repeat;
+    padding-top: 
+}
+.fillwidth {
+    min-width: 100%;
+    height: auto;
+}
+
+</style>
+
+<script type="text/javascript">
+function OnButton1()
+{window.location='try.html';
+}
+function OnButton2()
+{window.location='try2.html';
+}
+function OnButton3()
+{window.location='try3.html';
+}
+function OnButton4()
+{window.location='home1.html';
+}
+
+
+
+var image1=new Image()
+image1.src="c1.jpg"
+
+var image2=new Image()
+image2.src="c2.jpg"
+
+var image3=new Image()
+image3.src="c3.jpg"
+
+var image4=new Image()
+image4.src="c4.jpg"
+
+var image5=new Image()
+image5.src="c6.jpg"
+</script>
+</head>
+<body>
+
+<!--
+<hr size=20 width=200% color="indigo" align="left" >
+
+<img src="logo1.jpg" width="200" height="100">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="h1.jpg" width="1000" height="100" >
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l1.jpg" height="30" width="45" onclick="OnButton1();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l2.jpg" height="29" width="50" onclick="OnButton2();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src=" l3.jpg" height="23" width="68" onclick="OnButton3();">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="image" src="l4.jpg" height="43" width="120" onclick="OnButton4();">
+-->
+<div class="transbox" align="left">
+<form name="form123" action="login2.php" method="post">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<b><font face="WildWest" color="white" size="6"<label>Search Cab:</label></font></b>
+<br><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="WildWest" color="white" size="6"><b>
+<label>Picking up: &nbsp;&nbsp; &nbsp;&nbsp; 
+
+    <select name="origin" required style="width: 150px; height: 30px;" >      
+	<option value="agra">agra</option>      <option value="ahmedabad">ahmedabad</option>      <option value="bengaluru">bengaluru</option>      <option value="four">chennai</option>     
+	<option value="hyderabad">hyderabad</option>
+	<option value="jaipur">jaipur</option>
+	<option value="kolkata">kolkata</option>
+	<option value="lucknow">lucknow</option>
+	<option value="new delhi">new delhi</option>
+	<option value="mumbai">mumbai</option>
+	</select></label>
+<br><br>
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Dropping off: &nbsp;&nbsp;</label>
+<input type="text" name="destination" required="required" style="width: 145px; height:20px; font-size:10pt;">
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<input type="submit" name="search"  color="white" value="Search Your Cab" style="width: 220px; height:40px; font-size:14pt;"> 	
+	
+	</b></font>
+	
+</form>
+</div>
+
+
+
+
+
+
+<button class="button" style="vertical-align:left" onclick="OnButton1();"><span>Home</span></button>
+<button class="button" style="vertical-align:left" onclick="OnButton2();"><span>Hotels</span></button>
+<button class="buttonsel" style="vertical-align:left" onclick="OnButton3();"><span>Car Rental</span></button>
+<button class="button" style="vertical-align:left" onclick="OnButton4();"><span>Contact Us</span></button>
+<center>
+<img src="c1.jpg" name="slide" align="left" width="1350" height="575" >
+</center>
+
+<script type="text/javascript">
+
+var number=1;
+function myslide()
+{document.images.slide.src=eval("image"+number+".src");
+if(number<5)
+number=number+1;
+
+else
+number=1;
+setTimeout("myslide()",2000);
+
+
+}
+myslide();
+</script>
+</body>
+</html>
