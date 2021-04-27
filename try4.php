@@ -10,7 +10,7 @@ $dbname="db1";
 $conn=new mysqli($server,$username,"",$dbname);
 if($conn->connect_error)
 {
- echo "fail connection. Please Don't mind!!";
+ echo "fail connection. Please Don't mind again!!";
 }
 $l=$_SESSION['hname'];
 $m=$_SESSION['hid'];
