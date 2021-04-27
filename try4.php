@@ -10,7 +10,7 @@ $dbname="db1";
 $conn=new mysqli($server,$username,"",$dbname);
 if($conn->connect_error)
 {
- echo "fail connection";
+ echo "fail connection. Please Don't mind!!";
 }
 $l=$_SESSION['hname'];
 $m=$_SESSION['hid'];
@@ -98,7 +98,7 @@ if($result->num_rows>0)
 }
 
 .buttonsel span:after {
-  content: '»';
+  content: 'ï¿½';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -171,7 +171,7 @@ if($result->num_rows>0)
 }
 
 .button span:after {
-  content: '»';
+  content: 'ï¿½';
   position: absolute;
   opacity: 0;
   top: 0;
